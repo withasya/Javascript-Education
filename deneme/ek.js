@@ -4,3 +4,4 @@ alert("naber");
 jdhökdjhyb
 fokjdhfjnm
 */
+console.log("5");
