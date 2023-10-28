@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b id="demo"></b></p>
+    <script>
+
+        //artırma ve azaltma operatörleri
+        var a=5;
+        alert(a++);
+        //alert(++a);
+        var b=5;
+        alert(++b);
+        
+        //atama operatörleri
+        var x,y;
+        x=Number(prompt("x sayısı giriniz:"));
+        y=Number(prompt("y sayısı giriniz:"));
+        x+=y
+        document.getElementById("demo").innerHTML=x;
+        alert(x);
+
+        x=Number(prompt("x sayısı giriniz:"));
+        y=Number(prompt("y sayısı giriniz:"));
+        x-=y
+        alert(x);
+
+        x=Number(prompt("x sayısı giriniz:"));
+        y=Number(prompt("y sayısı giriniz:"));
+        x*=y
+        alert(x);
+
+        x=Number(prompt("x sayısı giriniz:"));
+        y=Number(prompt("y sayısı giriniz:"));
+        x/=y
+        alert(x);
+
+        x=Number(prompt("x sayısı giriniz:"));
+        y=Number(prompt("y sayısı giriniz:"));
+        x%=y
+        alert(x);
+        
+    </script>
+</body>
+</html>
