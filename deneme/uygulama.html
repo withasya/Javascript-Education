@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //girilen iki sayının toplamını yazdırma
+        var x,y;
+        x=Number(prompt("birinci sayı:"));
+        y=Number(prompt("ikinci sayı:"));
+        var toplam= x+y;
+        alert(toplam);
+
+        //girilen sayının karesini yazdırma
+        var x;
+        x=Number(prompt("bir sayı giriniz:"));
+        var kare= x*x;
+        alert(kare);
+
+        //girilen üç sayının ortalamasını yazdırma
+        var x,y,z;
+        x=Number(prompt("ilk sayı:"));
+        y=Number(prompt("ikinci sayı:"));
+        z=Number(prompt("son sayı:"));
+
+        var ortalama= (x+y+z)/3;
+        alert(ortalama);
+
+        //dikdörtgenin alanı ve çevresini yazdırma
+        var x,y;
+        x=Number(prompt("uzun kenar:"));
+        y=Number(prompt("kısa kenar:"));
+        var cevre= 2*(x+y);
+        var alan= x*y;
+
+        alert(cevre);
+        alert(alan);
+
+        //dairenin alanı ve çevresini yazdırma
+        var r;
+        const pi=3.14;
+        r= Number(prompt("yarıçapı giriniz:"))
+        var cevre= 2*pi*r;
+        var alan= pi*r*r;
+
+        alert(cevre);
+        alert(alan);
+    </script>
+</body>
+</html>
