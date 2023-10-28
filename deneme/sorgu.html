@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+    <script>
+        var yas;
+        yas=Number(prompt("yaşınızı giriniz:"))
+        if(yas<18)
+            document.write("siteye erişiminiz engellendi!");
+        else{
+            document.write("siteye giriş yaptınız");}
+        
+        const hour= new Date().getHours();
+        let tebrık;
+
+        if(hour<5)
+        tebrık="günaydın";
+        else
+        tebrık="iyi günler";
+        
+        document.getElementById("test").innerHTML=tebrık;
+    </script>
+</body>
+</html>
