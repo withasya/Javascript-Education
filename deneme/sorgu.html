@@ -8,22 +8,37 @@
 <body>
     <p id="test"></p>
     <script>
+
+        //yaş değeri aldık
         var yas;
         yas=Number(prompt("yaşınızı giriniz:"))
         if(yas<18)
             document.write("siteye erişiminiz engellendi!");
+        else if(yas==18)
+            document.write("siteye erişiminiz şimdilik engellendi!");
         else{
             document.write("siteye giriş yaptınız");}
-        
+
+        //saat ekledik
         const hour= new Date().getHours();
         let tebrık;
-
         if(hour<5)
-        tebrık="günaydın";
+            tebrık="günaydın";
         else
-        tebrık="iyi günler";
+            tebrık="iyi günler";
+            document.getElementById("test").innerHTML=tebrık;
+
+        //sadece pozitif sayıların karesi
+        let x;
+        x=prompt("bir sayı giriniz:");
+        x=Number(x);
+        let kare=x*x;
+
+        if(x>=0)
+            document.write(kare);
+        else
+            document.write("0 dan büyük bir sayı giriniz");
         
-        document.getElementById("test").innerHTML=tebrık;
     </script>
 </body>
 </html>
