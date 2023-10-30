@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //ekrana belirli sayıda yazı yazdırma
+        /*//ekrana belirli sayıda yazı yazdırma
         for(var x=1; x<6; x++){
             document.write("for döngüleri <br>");
         }
@@ -21,8 +21,16 @@
         var n=Number(prompt("n sayısı giriniz:"));
         for(var x=0; x<n; x++){
             document.write(x + "<br>");
-        }
+        }*/
 
+        // n'e kadar olan sayıların toplamını yazdırma
+        var n=Number(prompt("n sayısını giriniz:"));
+        var sonuc=0;
+
+        for(var a=0; a<n; a++)
+            sonuc= sonuc + a;
+        document.write(sonuc);
+        
     </script>
 </body>
 </html>
