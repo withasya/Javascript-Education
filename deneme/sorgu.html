@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="test"></p>
+    <p id="gün"><i></i></p>
     <script>
 
         //yaş değeri aldık
@@ -58,6 +59,35 @@
             alert("y büyüktür x den");
         else
             alert("x eşittir y");
+
+        //switch ile bir örnek
+        switch(new Date().getDay()){
+        case 0:
+            day="pazar";
+            break;
+        case 1:
+            day="pazartesi";
+            break;
+        case 2:
+            day="salı";
+            break;
+        case 3:
+            day="çarşamba";
+            break;
+        case 4:
+            day="perşembe";
+            break;
+        case 5:
+            day="cuma";
+            break;
+        case 6:
+            day="cumartesi";
+            break;
+        default:
+            day ="today";}
+            
+        document.getElementById("gün").innerHTML= day;
+        
     </script>
 </body>
 </html>
