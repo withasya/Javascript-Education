@@ -39,12 +39,25 @@
         else
             document.write("0 dan büyük bir sayı giriniz");
 
-        //farklı if else yöntemi !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //farklı if else yöntemi !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         var test;
         test=prompt("test edelim:");
         test=Number(test);
-        test>5 ? document.write("5 ten büyük"): document.write("5 ten küçük");
-        
+        test>5 ? document.write("5 ten büyük"): document.write("5 ten küçük"); 
+
+        //iki sayıyı karşılaştırma
+        let x,y;
+        x=prompt("x sayısını giriniz:");
+        x=Number(x);
+        y=prompt("y sayısını giriniz:");
+        y=Number(y);
+
+        if(x>y)
+            alert("x büyüktür y den");
+        else if(x<y)
+            alert("y büyüktür x den");
+        else
+            alert("x eşittir y");
     </script>
 </body>
 </html>
