@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Değer Döndüren Fonksiyonlar -Return
+        
+        function kare(x){
+            return x*x;
+        }
+        document.write(kare(4));
+        document.write("<br>");
+        document.write(kare(-8));
+        document.write("<br>");
+
+
+        function kupAl(y) {
+            return y*y*y;
+        }
+        var x=Number(prompt("x:"));
+        document.write(kupAl(x));
+        document.write("<br>");
+
+
+        function modAl(x,y) {
+            mod=x%y;
+            return mod;
+        }
+        var x,y;
+        x=Number(prompt("x:"));
+        y=Number(prompt("y:"));
+        document.write(modAl(x,y));
+    </script>
+</body>
+</html>
