@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+    <script>
+        //girilen iki değer arasındaki sayıların toplamı
+        var x,y,toplam=0;
+        x=Number(prompt("ilk değeri giriniz:"));
+        y=Number(prompt("ikinci değeri giriniz:"));
+        for(x; x<=y; x++){ //x yerine boşluk dabırakılabilir
+            toplam=toplam+x;
+        }
+        document.getElementById("test").innerHTML=toplam;
+        /*program istediğim gibi çalışsa da her zaman x in küçük olduğu durumu varsayıyor
+        bunu önlemek için ikinci bir geliştirme ekleyip paylaşacağım*/
+    </script>
+</body>
+</html>
