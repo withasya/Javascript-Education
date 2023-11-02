@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Daire{
+            constructor(r){
+            this.r=r;       //yarıçap parametre olarak girildi
+            }
+
+            alan(){         //sınıfa ait metot tanımladık
+            return 3.14*this.r*this.r; 
+            }
+
+            cevre(){        //alan ve çevre metotlarına sahibiz
+            return 2*3.14*this.r;
+            }
+        }
+        var r1=Number(prompt("yarıçap giriniz:"));
+        var daire1= new Daire(r1);
+        document.write("alan= "+daire1.alan());
+        document.write("<br>");
+        document.write("çevre= "+daire1.cevre());
+    </script>
+</body>
+</html>
