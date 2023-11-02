@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d=new Date();                 //bugünün tarihini döndürür
+        document.write(d +"<br>");
+
+        const e = new Date(2018, 11, 24, 10); //yıl ay gün saat
+        document.write(e+"<br>");
+
+        const c = new Date(99, 11, 24); //yıl ay gün
+        document.write(c+"<br>");
+
+        const b = new Date(2018, 11);   //yıl ay alınır - gün varsayılır 01 olarak
+        document.write(b+"<br>");
+
+        const a = new Date(2018);       //yıl alınır - ay ve gün 01.01 olarak varsayılır
+        document.write(a+"<br>");
+
+        /*Note: ay gün veya saatin sınırdan büyük olması sorun teşkil etmez. diğer yıla aya veya güne aktarılır.
+        new Date()
+        new Date(date string)
+        new Date(year,month)
+        new Date(year,month,day)
+        new Date(year,month,day,hours)
+        new Date(year,month,day,hours,minutes)
+        new Date(year,month,day,hours,minutes,seconds)
+        new Date(year,month,day,hours,minutes,seconds,ms)
+    new Date(milliseconds) */
+    </script>
+</body>
+</html>
