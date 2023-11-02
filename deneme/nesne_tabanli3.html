@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Ucgen{         //başlangıç değerini kendimiz verdik
+            static gen=0;   //sınıf içinde tanımlanan değişkenler static ile tanımlanır 
+            static yuks=0; //değişken değil özellik denilir
+
+            Alan(){
+            return (this.gen*this.yuks)/2;
+            }
+        }
+        var ucgen1= new Ucgen();
+        ucgen1.gen=Number(prompt("genişliği giriniz:"));
+        ucgen1.yuks=Number(prompt("yüksekliği giriniz:"));
+        document.write("Alan: "+ ucgen1.Alan());
+
+        var ucgen2= new Ucgen();
+        ucgen2.gen=6;
+        ucgen2.yuks=7;
+        document.write("Alan: "+ ucgen2.Alan());
+
+    </script>
+</body>
+</html>
