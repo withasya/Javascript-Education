@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lang=new Array(3);
+        lang[0]="html";
+        lang[1]="css";
+        lang[2]="js";
+
+        var lang1=new Array(1);
+        lang1[0]="ptn";
+        
+        document.write("dizinin eleman sayısı: "+lang.length +"<br>");
+        document.write("alfabetik sıralama: "+lang.sort() +"<br>");
+        document.write("elemanları ters sıralama: "+lang.reverse() +"<br>");
+        document.write("dizinin sonuna eleman ekleme ve elem. sayısı: "+lang.push("c++")  +"<br>");
+        document.write("dizinin başına eleman ekleme ve sayısı: "+lang.unshift("java") +"<br>");
+        document.write("diziye dizi ekleme: "+lang.concat(lang1) +"<br>");
+        document.write("ilk eleman döner ve silinir: "+lang.shift()  +"<br>");
+        document.write("son eleman döner ve silinir: "+lang.pop() +"<br>");
+        document.write("verilen elemanın indisini döndürür: "+lang.indexOf("css")  +"<br>");
+        document.write("elemanlar arasına karakter eklemek: "+lang.join("*") +"<br>");
+
+        //dizi silme
+        delete lang1[0];
+        document.write(lang1);
+    </script>
+</body>
+</html>
