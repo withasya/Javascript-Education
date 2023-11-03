@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*    var market=new Array(3);
+        market[0]=prompt("?");
+        market[1]=prompt("?");
+        market[2]=prompt("?");*/
+
+        var market=new Array(3);
+        for (var i = 0; i < market.length; i++) {
+            market[i]=Number(prompt(i+" indeksli elemanı giriniz"));
+        }
+        for (const i in market) {
+            document.write(market[i]+ "<br>");
+        }
+        
+    </script>
+</body>
+</html>
