@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--html kodları-->
+    <h1 id="test">Ana Sayfa </h1>
+    <p id="demo"> bu bir paragraf</p>
+    <p id="deneme"> bu diğer paragraf </p>
+    <img src="görsel\flower.jpg" id="flower" onmouseover="kucuk()" onmouseout="buyuk()">
+
+    <script>
+    //içeriği değiştirmek
+    document.getElementById("test").innerHTML="BÜYÜK BAŞLIK";
+    document.getElementById("demo").innerHTML="<b>değiştirilmiş ilk paragraf</b>";//inner html sayesinde
+    document.getElementById("deneme").innerHTML="değiştirilmiş ikinci paragraf";
+
+    //style
+    document.getElementById("test").style.color="red";
+    document.getElementById("deneme").style.fontFamily="Arial"
+
+    //görsel üzerinde değişiklikler
+    var a=document.getElementById("flower");
+
+    function kucuk() {
+    a.style.width="200px";
+    }
+
+    function buyuk(){
+    a.style.width="600px";
+    }
+    </script>
+</body>
+</html> 
