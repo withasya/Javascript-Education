@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"> MY Portfolio</h1>
+    <a href="giris.html" id="b"> Ana Sayfa</a>
+    <a href="iletisim.html" id="c">İletişim</a>
+
+    <h3>İletişim Formu</h3>
+    <form name="iletisim" id="iletisim">
+        Ad: <input type="text" id="ad"><br>
+        Soyad: <input type="text" id="soyad"> <br>
+        <input type="submit">
+        <input type="reset" >
+    </form>
+    
+    <script>
+        //döküman dizileri
+        document.write(document.forms.length +"<br>");//form sayısı
+        document.write(document.forms["iletişim"].length +"<br>");//form eleman sayısı
+        document.write(document.links.length +"<br>");//içindeki link sayısı
+        
+    </script>
+</body>
+</html>
