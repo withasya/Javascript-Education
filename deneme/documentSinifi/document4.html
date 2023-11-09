@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="ek">
+      bu paragrafa istediğimizi yazarak bir değşkene atayalım ve alttaki boş
+      paragrafın içine atalım
+    </p>
+
+    <p id="bos"></p>
+    <script>
+      let ekleme = document.getElementById("ek");
+
+      document.getElementById("bos").innerHTML =
+        "paragrafı başlattım devamına üstteki ekleme değişkenini ekleyelim -->" +
+        ekleme.innerHTML;
+    </script>
+  </body>
+</html>
